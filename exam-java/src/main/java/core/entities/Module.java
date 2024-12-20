@@ -10,20 +10,21 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class Module {
-    private Long id; // ID du module
-    private String name; // Nom du module
-    private String description; // Description du module
+    private Long id;
+    private String name;
+    private String description;
 
-    // Constructeur par défaut
+
+    
     public Module() {}
 
-    // Constructeur avec nom et description
+
     public Module(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
-    // Nouveau constructeur avec seulement un nom
+
     public Module(String name) {
         this.name = name;
     }

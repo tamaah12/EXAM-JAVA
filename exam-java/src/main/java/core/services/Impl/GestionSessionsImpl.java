@@ -7,6 +7,6 @@ import core.services.GestionSessions;
 public class GestionSessionsImpl implements GestionSessions {
     @Override
     public void planifierSession(Cours cours, Session session) {
-        // Logique pour planifier une session de cours
+
     }
 }

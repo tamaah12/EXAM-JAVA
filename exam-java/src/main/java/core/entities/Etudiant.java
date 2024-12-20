@@ -10,12 +10,12 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class Etudiant {
-    private Long id; // ID de l'étudiant
-    private String name; // Nom de l'étudiant
-    private String email; // Email de l'étudiant
-    private Classe cdsdClasse; // Classe dans laquelle l'étudiant est inscrit
+    private Long id;
+    private String name;
+    private String email;
+    private Classe cdsdClasse;
 
-    // Constructeur
+
     public Etudiant() {}
 
     public Etudiant(String name, String email, Classe cdsdClasse) {

@@ -17,7 +17,7 @@ public class GestionCoursImpl implements GestionCours {
 
     @Override
     public List<Cours> afficherCoursParNiveau(Niveau niveau) {
-        // Retourner la liste des cours d'un niveau spécifique
-        return coursList; // simplification
+
+        return coursList;
     }
 }

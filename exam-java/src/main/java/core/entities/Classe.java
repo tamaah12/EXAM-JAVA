@@ -13,12 +13,12 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class Classe {
-    private Long id; // ID de la classe
-    private String name; // Nom de la classe
-    private Niveau niveau; // Niveau de la classe
-    private List<Etudiant> students = new ArrayList<>(); // Liste des étudiants dans la classe
+    private Long id;
+    private String name;
+    private Niveau niveau;
+    private List<Etudiant> students = new ArrayList<>();
 
-    // Constructeur
+
     public Classe() {}
 
     public Classe(String name, Niveau niveau) {
@@ -26,7 +26,7 @@ public class Classe {
         this.niveau = niveau;
     }
 
-    // Méthode pour ajouter un étudiant à la classe
+
     public void addStudent(Etudiant etudiant) {
         this.students.add(etudiant);
     }

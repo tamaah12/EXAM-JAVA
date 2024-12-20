@@ -20,12 +20,12 @@ public class Main {
         int choix = 0;
         Scanner scanner = new Scanner(System.in);
 
-        // Création des services
+
         GestionCours gestionCours = new GestionCoursImpl();
         GestionSessions gestionSessions = new GestionSessionsImpl();
         GestionInscriptions gestionInscriptions = new GestionInscriptionsImpl();
 
-        // Création du contrôleur Admin
+
         AdminController adminController = new AdminController(gestionCours, gestionSessions, gestionInscriptions);
 
         do {
@@ -33,12 +33,12 @@ public class Main {
             System.out.println("2- Afficher les cours par niveau");
             System.out.println("3- Quitter");
             choix = scanner.nextInt();
-            scanner.nextLine();  // Consomme la ligne restante
+            scanner.nextLine();
 
             switch (choix) {
                 case 1:
-                    // Création d'un cours
-                    System.out.println("Entrez le nom du professeur : ");
+
+                System.out.println("Entrez le nom du professeur : ");
                     String nomProfesseur = scanner.nextLine();
                     System.out.println("Entrez l'email du professeur : ");
                     String emailProfesseur = scanner.nextLine();
@@ -52,19 +52,19 @@ public class Main {
 
                     System.out.println("Entrez le nom de la classe : ");
                     String nomClasse = scanner.nextLine();
-                    Classe classe = new Classe(nomClasse, null); // Simplification ici
+                    Classe classe = new Classe(nomClasse, null);
 
                     System.out.println("Entrez le titre du cours : ");
                     String titreCours = scanner.nextLine();
-                    Cours cours = new Cours(titreCours, module, professeur); // Correction du constructeur
+                    Cours cours = new Cours(titreCours, module, professeur);
 
-                    // Appel à la méthode pour créer le cours
+
                     adminController.creerCours(cours);
                     break;
 
                 case 2:
-                    // Affichage des cours par niveau
-                    System.out.println("Entrez le niveau des cours (par exemple, Débutant, Intermédiaire, Avancé) : ");
+
+                System.out.println("Entrez le niveau des cours (par exemple, Débutant, Intermédiaire, Avancé) : ");
                     String niveauNom = scanner.nextLine();
                     Niveau niveau = new Niveau(niveauNom);
                     adminController.afficherCoursParNiveau(niveau);

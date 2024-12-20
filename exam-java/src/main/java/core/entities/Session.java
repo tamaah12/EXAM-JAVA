@@ -12,14 +12,14 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class Session {
-    private Long id; // ID de la session
-    private LocalDateTime date; // Date de la session
-    private String startTime; // Heure de début
-    private String endTime; // Heure de fin
-    private String room; // Salle de la session (peut être null si en ligne)
-    private Cours course; // Cours associé à la session
+    private Long id;
+    private LocalDateTime date;
+    private String startTime;
+    private String endTime;
+    private String room;
+    private Cours course;
 
-    // Constructeur
+
     public Session() {}
 
     public Session(LocalDateTime date, String startTime, String endTime, String room, Cours course) {

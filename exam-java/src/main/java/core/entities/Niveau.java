@@ -10,10 +10,10 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class Niveau {
-    private Long id; // ID du niveau
-    private String name; // Nom du niveau (par exemple, "Débutant", "Avancé")
+    private Long id;
+    private String name;
 
-    // Constructeur
+
     public Niveau() {}
 
     public Niveau(String name) {
